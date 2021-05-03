@@ -7,7 +7,7 @@ jobs:
   # when a job name is not provided
   make-lint:
     # Name the Job
-    name: Runs super-linter
+    name: Runs linter
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
@@ -18,11 +18,10 @@ jobs:
       uses: actions/checkout@v2
 
       # installing dependencies
-    - name: npm install
+    - name: Install Dependencies
       # Install project
       run: make install
 
       # Runs the Linter action
     - name: Run linter
-      # Run Linter
       run: make lint
