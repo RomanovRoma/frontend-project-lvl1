@@ -1,3 +1,5 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-export const name = readlineSync.question("Your answer: ");
+const name = readlineSync.question('Your answer: ');
+
+export default name;
